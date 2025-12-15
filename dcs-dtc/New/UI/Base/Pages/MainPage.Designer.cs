@@ -30,6 +30,7 @@ partial class MainPage
     {
         btnF16 = new Button();
         btnF18 = new Button();
+        btnF14 = new Button();
         btnAH64 = new Button();
         btnF15E = new Button();
         btnWptDatabase = new Button();
@@ -59,13 +60,29 @@ partial class MainPage
         btnF18.Image = Properties.Resources.FA18;
         btnF18.Location = new Point(272, 14);
         btnF18.Name = "btnF18";
-        btnF18.Padding = new Padding(5);
+        btnF18.Padding = new Padding(5); 
         btnF18.Size = new Size(226, 150);
         btnF18.TabIndex = 3;
         btnF18.Text = "F/A-18C Hornet";
         btnF18.TextAlign = ContentAlignment.TopLeft;
         btnF18.UseVisualStyleBackColor = true;
         btnF18.Click += btnF18_Click;
+        // 
+        // btnF14
+        // 
+        btnF14.FlatStyle = FlatStyle.Flat;
+        btnF14.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+        btnF14.ForeColor = Color.Black;
+        btnF14.Image = Properties.Resources.F14;
+        btnF14.Location = new Point(272, 189);
+        btnF14.Name = "btnF14";
+        btnF14.Padding = new Padding(5);
+        btnF14.Size = new Size(226, 150);
+        btnF14.TabIndex = 3;
+        btnF14.Text = "F-14B Tomcat";
+        btnF14.TextAlign = ContentAlignment.TopLeft;
+        btnF14.UseVisualStyleBackColor = true;
+        btnF14.Click += btnF14_Click;
         // 
         // btnAH64
         // 
@@ -124,6 +141,7 @@ partial class MainPage
         BackColor = Color.PaleGoldenrod;
         Controls.Add(btnF16);
         Controls.Add(btnF18);
+        Controls.Add(btnF14);
         Controls.Add(btnAH64);
         Controls.Add(btnF15E);
         Controls.Add(btnWptDatabase);
@@ -136,6 +154,7 @@ partial class MainPage
 
     private System.Windows.Forms.Button btnF16;
     private System.Windows.Forms.Button btnF18;
+    private System.Windows.Forms.Button btnF14;
     private System.Windows.Forms.Button btnF15E;
     private System.Windows.Forms.Button btnWptDatabase;
     private System.Windows.Forms.Button btnAH64;

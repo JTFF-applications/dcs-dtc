@@ -2,6 +2,7 @@
 using DTC.New.Presets.V2.Aircrafts.F15E;
 using DTC.New.Presets.V2.Aircrafts.F16;
 using DTC.New.Presets.V2.Aircrafts.FA18;
+using DTC.New.Presets.V2.Aircrafts.F14;
 
 namespace DTC.New.Presets.V2.Base
 {
@@ -21,6 +22,9 @@ namespace DTC.New.Presets.V2.Base
                 aircrafts.Add(ac.GetAircraftModelName(), ac);
 
                 ac = new FA18Aircraft();
+                aircrafts.Add(ac.GetAircraftModelName(), ac);
+
+                ac = new F14Aircraft();
                 aircrafts.Add(ac.GetAircraftModelName(), ac);
 
                 ac = new F15EAircraft();

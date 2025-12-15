@@ -3,6 +3,7 @@ using DTC.New.Presets.V2.Aircrafts.AH64D;
 using DTC.New.Presets.V2.Aircrafts.F15E;
 using DTC.New.Presets.V2.Aircrafts.F16;
 using DTC.New.Presets.V2.Aircrafts.FA18;
+using DTC.New.Presets.V2.Aircrafts.F14;
 using DTC.New.Presets.V2.Base;
 
 namespace DTC.New.UI.Base.Pages;
@@ -31,6 +32,11 @@ public partial class MainPage : Page
     private void btnF18_Click(object sender, System.EventArgs e)
     {
         NavigateTo("FA18C");
+    }
+
+    private void btnF14_Click(object sender, System.EventArgs e)
+    {
+        NavigateTo("F14");
     }
 
     private void btnAH64_Click(object sender, System.EventArgs e)
